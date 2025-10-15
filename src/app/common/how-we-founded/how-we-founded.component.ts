@@ -1,8 +1,10 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'app-how-we-founded',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [NgIf],
     templateUrl: './how-we-founded.component.html',
     styleUrl: './how-we-founded.component.scss'

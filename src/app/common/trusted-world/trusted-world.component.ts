@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'app-trusted-world',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [],
     templateUrl: './trusted-world.component.html',
     styleUrl: './trusted-world.component.scss'

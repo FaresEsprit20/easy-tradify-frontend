@@ -1,8 +1,10 @@
 import { NgStyle } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ChangeDetectionStrategy, } from '@angular/core';
 
 @Component({
     selector: 'app-page-banner:not(1)',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [NgStyle],
     templateUrl: './page-banner.component.html',
     styleUrl: './page-banner.component.scss'

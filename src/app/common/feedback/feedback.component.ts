@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-feedback',
+	standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [CarouselModule],
     templateUrl: './feedback.component.html',
     styleUrl: './feedback.component.scss'

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CtaComponent } from '../../common/cta/cta.component';
 import { DownloadAppComponent } from '../../common/download-app/download-app.component';
 import { ReadyToTalkComponent } from '../../common/ready-to-talk/ready-to-talk.component';
@@ -8,6 +8,8 @@ import { HowWeFoundedComponent } from '../../common/how-we-founded/how-we-founde
 
 @Component({
     selector: 'app-about-page-one',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [PageBannerComponent, HowWeFoundedComponent, TeamComponent, ReadyToTalkComponent, DownloadAppComponent, CtaComponent],
     templateUrl: './about-page-one.component.html',
     styleUrl: './about-page-one.component.scss'

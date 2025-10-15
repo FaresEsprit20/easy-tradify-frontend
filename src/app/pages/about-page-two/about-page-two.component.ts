@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PageBannerComponent } from './page-banner/page-banner.component';
 import { InvestorsComponent } from '../../common/investors/investors.component';
 import { TeamComponent } from './team/team.component';
@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 
 @Component({
     selector: 'app-about-page-two',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [PageBannerComponent, AboutComponent, FunfactsComponent, WhyChooseKlobComponent, PopularCountriesComponent, TeamComponent, InvestorsComponent],
     templateUrl: './about-page-two.component.html',
     styleUrl: './about-page-two.component.scss'

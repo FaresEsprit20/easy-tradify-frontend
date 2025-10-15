@@ -1,8 +1,10 @@
 import { NgClass, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'app-testimonials',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [NgClass, NgIf],
     templateUrl: './testimonials.component.html',
     styleUrl: './testimonials.component.scss'

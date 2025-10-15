@@ -1,8 +1,10 @@
 import { NgIf } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-back-to-top',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [NgIf],
     templateUrl: './back-to-top.component.html',
     styleUrl: './back-to-top.component.scss'

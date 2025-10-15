@@ -1,9 +1,11 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-success-story',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [CarouselModule, NgIf],
     templateUrl: './success-story.component.html',
     styleUrl: './success-story.component.scss'

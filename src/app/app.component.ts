@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule, NgClass, ViewportScroller } from '@angular/common';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { FooterComponent } from './common/footer/footer.component';
@@ -7,6 +7,8 @@ import { BackToTopComponent } from './common/back-to-top/back-to-top.component';
 
 @Component({
     selector: 'app-root',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RouterOutlet, CommonModule, NavbarComponent, FooterComponent, BackToTopComponent, NgClass],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'

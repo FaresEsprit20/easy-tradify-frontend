@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PageBannerComponent } from './page-banner/page-banner.component';
 import { CtaComponent } from '../../common/cta/cta.component';
 import { NgClass, NgFor } from '@angular/common';
 
 @Component({
     selector: 'app-faq-page',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [PageBannerComponent, CtaComponent, NgFor, NgClass],
     templateUrl: './faq-page.component.html',
     styleUrl: './faq-page.component.scss'

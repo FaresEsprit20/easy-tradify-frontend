@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { GetStartedComponent } from '../../common/get-started/get-started.component';
 import { ReviewsComponent } from '../../common/reviews/reviews.component';
 import { SuccessStoryComponent } from '../../common/success-story/success-story.component';
@@ -12,6 +12,8 @@ import { GrowYourBusinessComponent } from './grow-your-business/grow-your-busine
 
 @Component({
     selector: 'app-financial-service-provider',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [BannerComponent, PartnersComponent, PaymentExperiencesComponent, ReviewsComponent, SuccessStoryComponent, TrustedWorldComponent, GetStartedComponent, AboutComponent, GrowYourBusinessComponent, ServicesComponent],
     templateUrl: './financial-service-provider.component.html',
     styleUrl: './financial-service-provider.component.scss'

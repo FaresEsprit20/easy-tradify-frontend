@@ -1,8 +1,10 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'app-money-transfer',
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [NgIf],
     templateUrl: './money-transfer.component.html',
     styleUrl: './money-transfer.component.scss'

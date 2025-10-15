@@ -1,11 +1,15 @@
-import { Component, HostListener } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-navbar',
-    imports: [RouterLink, RouterLinkActive],
+    standalone: true,
+    imports: [RouterLink, RouterLinkActive, NgClass],
     templateUrl: './navbar.component.html',
-    styleUrl: './navbar.component.scss'
+    styleUrl: './navbar.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
+
 })
 export class NavbarComponent {
 
