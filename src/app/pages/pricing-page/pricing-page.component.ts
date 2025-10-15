@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
     selector: 'app-pricing-page',
     standalone: true,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [RouterLink, PageBannerComponent, CompareWithOthersComponent, CtaComponent],
+    imports: [PageBannerComponent, CompareWithOthersComponent, CtaComponent],
     templateUrl: './pricing-page.component.html',
     styleUrl: './pricing-page.component.scss'
 })

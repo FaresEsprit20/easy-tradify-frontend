@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
     selector: 'app-get-started',
     standalone: true,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './get-started.component.html',
     styleUrl: './get-started.component.scss'
 })

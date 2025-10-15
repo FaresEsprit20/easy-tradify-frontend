@@ -1,12 +1,11 @@
-import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink, Router } from '@angular/router';
+import {  Router } from '@angular/router';
 
 @Component({
     selector: 'app-footer',
     standalone: true,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [RouterLink, NgClass],
+    imports: [],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'
 })
