@@ -9,7 +9,6 @@ import { HowWeFoundedComponent } from '../../common/how-we-founded/how-we-founde
 @Component({
     selector: 'app-about-page-one',
     standalone: true,
-    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [PageBannerComponent, HowWeFoundedComponent, TeamComponent, ReadyToTalkComponent, DownloadAppComponent, CtaComponent],
     templateUrl: './about-page-one.component.html',
     styleUrl: './about-page-one.component.scss'

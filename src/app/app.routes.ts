@@ -35,7 +35,7 @@ export const routes: Routes = [
     {path: 'blog-grid', component: BlogGridPageComponent},
     {path: 'blog-right-sidebar', component: BlogRightSidebarPageComponent},
     {path: 'blog-details', component: BlogDetailsPageComponent},
-    {path: 'contact', component: ContactPageOneComponent},
+    {path: 'contact', component: ContactPageTwoComponent},
     {path: 'contact-2', component: ContactPageTwoComponent},
     // Here add new pages component
 
